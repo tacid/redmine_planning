@@ -240,7 +240,7 @@ PlanningIssue.prototype._showTooltip = function ()
     url = redmine_planning_settings.urls.root + 'issues/' + this.id;
 
     d.html(
-        '<table cellpadding="2">' +
+        '<table>' +
         '<tr><th colspan="2" style="text-align: left; padding-bottom: 5px;">' + this.tracker + ' <a href="' + url + '" target="_blank">#' + this.id + '</a>: '+ this.name  +'</th></tr>' +
         '<tr><th>' + this.t('project') + ': </th><td><a href="' + prj_url + '" target="_blank">' + this.project + '</a></td></tr>' +
         '<tr><th>' + this.t('parent_task') + ': </th><td>' + parent_issue + '</td></tr>' +
